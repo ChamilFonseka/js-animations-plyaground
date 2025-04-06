@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-just-black: #0e100f;
+    --color-surface-white: #fffce1;
+}
+
+body {
+    margin: 25px;
+}
+
+.tweens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    background-color: oklch(82.8% 0.111 230.318);
+    color: oklch(44.3% 0.11 240.79);
+}
