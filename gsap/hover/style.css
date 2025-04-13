@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 50vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+#section1 {
+  background-color: lightsalmon;
+}
+
+#section2 {
+  background-color: lightcoral;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  position: absolute;
+}
