@@ -16,7 +16,7 @@ section {
 }
 
 #section2 {
-  background-color: lightcoral;
+  background-color: lightseagreen;
 }
 
 .box {
@@ -32,4 +32,28 @@ section {
   height: 100px;
   background-color: lightpink;
   position: absolute;
+}
+
+.big-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
+  z-index: 1;
+}
+
+.small-circles-holder {
+  position:absolute;
+
+}
+
+.small-circle {
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:orange;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
 }
