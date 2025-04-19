@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* overflow-x: hidden; */
+}
+
+.main-section {
+    height: 100vh;
+    background-color: cadetblue;
+    display: grid;
+    place-items: center;
+    color: azure;
+
+    & .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+    }
+}
+
+.without-scrub-section {
+    height: 50vh;
+    background-color: lightcoral;
+    position: relative;
+}
+
+.with-scrub-section {
+    height: 50vh;
+    background-color: lightseagreen;
+    position: relative;
+}
+
+.with-pin-section {
+    height: 50vh;
+    background-color: lightskyblue;
+    position: relative;
+}
+
+.box,
+.ghost {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 100px;
+    height: 100px;
+    background-color: lightcyan;
+}
+
+.ghost {
+    opacity: 0.5;
+}
+
+.blank-section {
+    height: 100vh;
+    background-color: black;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.panel-container {
+    background-color: lightpink;
+    height: 100vh;
+}
+
+.text-center {
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.l-to-r {
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+}
+
+.b-to-t {
+    background-color: lightslategrey;
+    height: 100%;
+    width: 100%;
+}
+
+.r-to-l {
+    background-color: burlywood;
+    height: 100%;
+    width: 100%;
+}
+
+#section1 {
+    background-color: lightskyblue;
+    height: 100vh;
+}
+
+#section2 {
+    background-color: cornflowerblue;
+    height: 100vh;
+}
+
+#section3 {
+    background-color: navy;
+    height: 100vh;
+}
+
+#snap-section {
+    background-color: lightcoral;
+    height: 100vh;
+    display: flex;
+
+    & .snap-panel {
+        flex-shrink: 0;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    & #snap-panel1 {
+        background-color: lightblue;
+    }
+
+    & #snap-panel2 {
+        background-color: cornflowerblue;
+    }
+
+    & #snap-panel3 {
+        background-color: darkslateblue;
+    }
+}
