@@ -9,10 +9,6 @@
     --color-surface-white: #fffce1;
 }
 
-body {
-    margin: 25px;
-}
-
 section {
     border-bottom: 3px dashed var(--color-just-black);
     padding: 10px 0;
