@@ -19,6 +19,17 @@ section {
   background-color: lightseagreen;
 }
 
+#section3 {
+  background-color: lightskyblue;
+  & .arrow {
+    border: none;
+    background: transparent;
+    font-size: 5rem;
+    transform: scale(0.9);
+    will-change: transform;
+  }
+}
+
 .box {
   width: 100px;
   height: 100px;

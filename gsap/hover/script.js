@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const box = document.querySelector(".box");
   const bar = document.querySelector(".bar");
+  const arrow = document.querySelector(".arrow");
 
   gsap.set(bar, { scaleX: 0, transformOrigin: "left center" });
   const tl = gsap.timeline({ paused: true, defaults: { duration: 0.5 } });
@@ -85,4 +86,25 @@ document.addEventListener("DOMContentLoaded", () => {
       tl2.play();
     }
   });
+
+    //-------------------------------------------------------------------------------------------------
+
+    const pulse = gsap.to(arrow, {
+      scale: 1,
+      ease: "linear",
+      repeat: -1,
+      yoyo: true,
+      paused: true
+    });
+
+    arrow.addEventListener("mouseenter", () => {
+      pulse.restart();
+    });
+
+    arrow.addEventListener("mouseleave", () => {
+      pulse.pause();
+      gsap.to(arrow, {
+        scale: 0.9,
+      });
+    });
 });
