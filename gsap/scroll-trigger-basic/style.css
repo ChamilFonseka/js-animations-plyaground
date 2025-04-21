@@ -5,7 +5,7 @@
 }
 
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .main-section {
@@ -140,5 +140,50 @@ body {
 
     & #snap-panel3 {
         background-color: darkslateblue;
+    }
+}
+
+#cards-section {
+    background-color: lightcoral;
+    height: 100vh;
+    display: flex;
+    user-select: none;
+
+    & .left {
+        flex-basis: 50%;
+        display: grid;
+        place-items: center;
+        padding: 3rem;
+        color: antiquewhite;
+
+        & h1 {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+
+    & .right {
+        flex-basis: 50%;
+        display: grid;
+        place-items: center;
+
+        & #card-container {
+            width: 20vw;
+            height: 20vw;
+        }
+
+        & .card {
+            width: 20vw;
+            height: 20vw;
+            border-radius: 1rem;
+            position: absolute;
+            background-color: azure;
+            box-shadow: 20px 15px 15px -3px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
     }
 }

@@ -87,4 +87,25 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
     //-------------------------------------------------
+    
+
+
+    //-------------------------------------------------
+    const cardTL = gsap.timeline();
+    const cards = gsap.utils.toArray(".card")
+    cards.forEach((card, i) => {
+        gsap.set(card, { rotation: -i * 10, x: -10 * i, y: 20 * i , zIndex: cards.length - i });
+
+        cardTL.to(card, { x: 100, y: '-100vh', opacity: 0});
+        cardTL.to("#card-container", { rotation: (i + 1) * 10, x: 10 * (i + 1), y: -20 * (i + 1) }, "<");
+    });
+
+        ScrollTrigger.create({
+        animation: cardTL,
+        trigger: "#cards-section",
+        start: "top top",
+        scrub: true,
+        pin: true,
+    });
+    //-------------------------------------------------
 }); 
