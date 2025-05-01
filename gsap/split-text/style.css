@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 33.33vh;
+    display: grid;
+    place-items: center;
+    color: azure;
+    will-change: contents
+}
+
+.container:nth-child(1) {
+    background-color: darkcyan;
+}
+
+.container:nth-child(2) {
+    background-color: darkslategray;
+}
+
+.container:nth-child(3) {
+    background-color: darkseagreen;
+}
